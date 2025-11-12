@@ -19,3 +19,5 @@ jobs:
         uses: actions/checkout@v5.0.0
       - name: llamar a mi action
         uses: ./.github/actions/my-action
+        with:
+          message: "Hola desde el workflow passando un input"
