@@ -1,0 +1,10 @@
+name: holas
+
+on: [push]
+
+jobs:
+  hola:
+    runs-on: windows-latest
+    steps:
+      - name: hola
+        run: echo "holas"
