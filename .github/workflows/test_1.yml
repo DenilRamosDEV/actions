@@ -8,3 +8,8 @@ jobs:
     steps:
       - name: hola
         run: echo "holas"
+  others:
+    runs-on: windows-latest
+    steps:
+      - name: LS
+        run: tree
