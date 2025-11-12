@@ -1,6 +1,9 @@
 name: holas
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   hola:
@@ -12,4 +15,4 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: LS
-        run: tree
+        run: ls -la
