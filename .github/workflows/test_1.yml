@@ -17,3 +17,10 @@ jobs:
           ssh-keyscan -H 127.0.1.1 >> ~/.ssh/known_hosts
 
           cat ~/.ssh/id_rsa
+      - name: notificacion
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.WEBHOOK_URL }}
+        with:
+          author_name: "Action" 
+          fields: repo,message,commit,author,action,eventName 
